@@ -1,18 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorBlanco">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="8dp"
+            android:elevation="4dp"
+            app:cardElevation="8dp"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/banner1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="8dp"
+            android:elevation="4dp"
+            app:cardElevation="8dp"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/banner2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colecciones"
+            android:textColor="@color/colorTxt"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="8dp"
+            android:elevation="4dp"
+            app:cardElevation="8dp"
+            android:foreground="?selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/banner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cascos"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="22sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="8dp"
+            android:elevation="4dp"
+            app:cardElevation="8dp"
+            android:foreground="?selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/banner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calzado"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="22sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="8dp"
+            android:elevation="4dp"
+            app:cardElevation="8dp"
+            android:foreground="?selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/banner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deportes"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="22sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mas_vendidos"
+            android:textColor="@color/colorTxt"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recomendados"
+            android:textColor="@color/colorTxt"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_test2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

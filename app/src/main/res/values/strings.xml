@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">TestElektra</string>
+
+    <string name="colecciones">Colecciones</string>
+    <string name="cascos">Cascos y accesorios</string>
+    <string name="calzado">Calzado</string>
+    <string name="deportes">Deportes</string>
+    <string name="mas_vendidos">Los mas vendidos</string>
+    <string name="recomendados">Recomendados para ti</string>
+    <string name="credito">Credito elektra</string>
+    <string name="desde">Desde $132.00 semanales</string>
+    <string name="btn_comprar">Comprar</string>
+
+    <string-array name="skus">
+        <item>321323142</item>
+        <item>321323076</item>
+        <item>45025344</item>
+        <item>45024957</item>
+        <item>1003678</item>
+        <item>45024957</item>
+        <item>321321586</item>
+        <item>45025337</item>
+        <item>321323141</item>
+        <item>45035651</item>
+        <item>45048926</item>
+        <item>1007046</item>
+        <item>1006062</item>
+        <item>1007073</item>
+        <item>321324716</item>
+        <item>1006025</item>
+        <item>1005116</item>
+        <item>1006593</item>
+        <item>1006581</item>
+        <item>1006945</item>
+        <item>321321538</item>
+    </string-array>
+
 </resources>
